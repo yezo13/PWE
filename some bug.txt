@@ -1,0 +1,5 @@
+1.无法部署是因为没有给potting构造函数赋值，报错会显示
+1）migrate的时候Error encountered, bailing. Network state unknown. Review successful transactions manually.
+2）点击的时候web的命令行显示 Contract has not been deployed to detected network
+
+解决办法：在migrations.sol里面deploy potting的语句中加入构造函数的参数，然后重新compile和migrate
